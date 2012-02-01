@@ -1,4 +1,28 @@
 GW20e buildout example
 ======================
 
+This buildout can be used to setup development, testing, acceptance and 
+production environments for Plone 4.x
+
+Prequisites
+-----------
+
+  * Python 2.6
+
+Optional virtual environment
+----------------------------
+
+Create a virtualenv environment for Python 2.6
+
+    virtualenv-2.6 --no-site-packages .
+    . ./bin/activate
+
+Bootstrap development buildout
+------------------------------
+
+Add your development sources for mr.developer to buildout.cfg. Bootstrap and
+run buildout on the development configuration:
+
+    python bootstrap.py -c buildout-dvl.cfg
+    ./bin/buildout -c buildout-dvl.cfg
 
